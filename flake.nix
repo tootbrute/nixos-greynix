@@ -13,39 +13,39 @@
         greynix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          /home/elias/nixos-config/base.nix
-          /home/elias/nixos-config/greynix/configuration.nix
+          ./base.nix
+          ./greynix/configuration.nix
           
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.elias = import /home/elias/nixos-config/home.nix;
+            home-manager.users.elias = import ./home.nix;
 
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
-          }
-        ];
+          } #close home-manager
+        ]; #close modules
+       }; #close greynix
+
         # bluenix - Blue Acer machine
         bluenix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          /home/elias/nixos-config/base.nix
-          /home/elias/nixos-config/bluenix/configuration.nix
+          ./base.nix
+          ./bluenix/configuration.nix
           
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.elias = import /home/elias/nixos-config/home.nix;
+            home-manager.users.elias = import ./nixos-config/home.nix;
 
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
-          }
-        ];
-      };
-    };
-  };
-};
-
+          } #close homemanager
+        ]; #close modules
+      }; # close bluenix
+    }; #close nixosconfigurations
+  }; #close outputs
 }
