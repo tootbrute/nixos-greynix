@@ -12,7 +12,8 @@
     cheese      # photo booth
     eog         # image viewer
     epiphany    # web browser
-    #gedit       # text editor
+    evince      # pdfs
+    #gedit      # text editor
     simple-scan # document scanner
     totem       # video player
     yelp        # help viewer
