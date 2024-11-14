@@ -16,7 +16,6 @@
     simple-scan # document scanner
     totem       # video player
     yelp        # help viewer
-    evince      # document viewer
     file-roller # archive manager
     geary       # email client
     seahorse    # password manager
