@@ -12,6 +12,9 @@
       ./hardware-configuration.nix
     ];
 
+  # to make epson work
+  hardware.sane.enable = true; # enables support for SANE scanners
+
   zramSwap.enable = true;
 
   networking.hostName = "bluenix"; # Define your hostname.
@@ -26,7 +29,7 @@
   users.users.elias = {
     isNormalUser = true;
     description = "Elias Gasparis";
-    extraGroups = [ "networkmanager" "wheel"];
+    extraGroups = [ "networkmanager" "wheel" "scanner"];
     packages = with pkgs; [
     #  thunderbird
     ];
