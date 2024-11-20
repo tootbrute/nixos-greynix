@@ -1,11 +1,9 @@
-# add things to git
-#git add .
-#git commit -m "Update NixOS config."
-#git push origin main
-
 # pull new stuff down
-#git pull ?
+git pull origin main
 echo "rebuilding" $(hostname) "from git repo"
+git pull origin main
+
+# build it
 sudo nixos-rebuild switch --flake '.#$(hostname)'
 
 # update nixos
