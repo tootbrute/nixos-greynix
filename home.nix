@@ -25,7 +25,7 @@
     # feel free to add your own or remove some of them
     hello
 
-    cinnamon.xreader #pdf viewer
+    xreader #pdf viewer
 
     fastfetch
     nnn # terminal file manager
@@ -117,7 +117,7 @@
     settings = {
       env.TERM = "xterm-256color";
       font = {
-        size = 12;
+        size = 14;
         # this causes error
         #draw_bold_text_with_bright_colors = true;
       };
