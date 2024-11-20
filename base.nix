@@ -6,7 +6,6 @@
       ./gnome.nix
       ./systemd.nix
       ./fonts.nix
-      <home-manager/nixos>
     ];
 
   # Bootloader.
