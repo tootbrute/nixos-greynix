@@ -121,6 +121,10 @@
         # this causes error
         #draw_bold_text_with_bright_colors = true;
       };
+      window.dimensions = {
+        lines = 40;
+        columns = 200;
+      };
       scrolling.multiplier = 5;
       selection.save_to_clipboard = true;
     };
