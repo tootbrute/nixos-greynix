@@ -101,6 +101,12 @@
     usbutils # lsusb
   ];
 
+  # Environment
+  home.sessionVariables = {
+    EDITOR = "nano";
+    BROWSER = "firefox";
+    TERMINAL = "alacritty";
+
   # basic configuration of git, please change to your own
   programs.git = {
     enable = true;
