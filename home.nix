@@ -23,6 +23,16 @@
   home.packages = with pkgs; [
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
+    
+    # font stuff for alacritty
+    pkgs.iosevka #font program
+    (pkgs.nerdfonts.override {
+      fonts = [
+        "IBMPlexMono"
+        "Iosevka"
+        "IosevkaTerm"
+      ];
+    })
 
     xreader #pdf viewer
 
@@ -115,11 +125,29 @@
     # custom settings
     settings = {
       env.TERM = "xterm-256color";
-      font = {
-        size = 14;
-        # this causes error
-        #draw_bold_text_with_bright_colors = true;
+    font = {
+      normal = {
+        family = "IosevkaTerm Nerd Font";
+        style = "Regular";
       };
+      bold = {
+        family = "IosevkaTerm Nerd Font";
+        style = "Bold";
+      };
+      italic = {
+        family = "IosevkaTerm Nerd Font";
+        style = "Italic";
+      };
+      bold_italic = {
+        family = "IosevkaTerm Nerd Font";
+        style = "Bold Italic";
+      };
+      size = 16;
+  };
+
+#      font = {
+#        size = 18;
+#      };
       window.dimensions = {
         lines = 40;
         columns = 200;
