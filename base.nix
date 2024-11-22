@@ -103,9 +103,6 @@
   # Install Firefox.
   programs.firefox.enable = true;
   
-  # Install KDE Connect
-  programs.kdeconnect.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
