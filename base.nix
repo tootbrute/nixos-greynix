@@ -49,11 +49,22 @@
     LC_TELEPHONE = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
   };
-
- i18n.inputMethod = {
-    type = "fcitx5";
-    fcitx5.addons = with pkgs; [ fcitx5-chewing fcitx5-chinese-addons ];
+#from someone on fedi
+  i18n.inputMethod = {
+    enabled = "fcitx5";
+    fcitx5.waylandFrontend = true;
+    fcitx5.addons = with pkgs; [
+      fcitx5-gtk             # alternatively, kdePackages.fcitx5-qt
+      fcitx5-chewing
+      fcitx5-chinese-addons  # table input method support
+      fcitx5-nord            # a color theme
+    ];
   };
+#old one didn't work
+# i18n.inputMethod = {
+#    type = "fcitx5";
+#    fcitx5.addons = with pkgs; [ fcitx5-chewing fcitx5-chinese-addons ];
+#  };
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
