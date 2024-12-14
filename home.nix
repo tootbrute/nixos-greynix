@@ -26,14 +26,16 @@
     
     # font stuff for alacritty
     pkgs.iosevka #font program
-
-# not working
-#    (pkgs.nerdfonts.override {
-#      fonts = [
-#        "IBMPlexMono"
-#        "Iosevka"
-#        "IosevkaTerm"
-#      ];
+    # nerd fonts - https://search.nixos.org/packages?channel=unstable&size=50&sort=relevance&type=packages&query=nerd-fonts
+    nerd-fonts.iosevka
+    nerd-fonts.iosevka-term
+    nerd-fonts.fira-code
+    nerd-fonts.roboto-mono
+    nerd-fonts.noto
+    nerd-fonts.martian-mono
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.iosevka-term-slab
+    nerd-fonts.go-mono
 
     xreader #pdf viewer
 
