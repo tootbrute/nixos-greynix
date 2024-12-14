@@ -154,7 +154,6 @@ i18n.inputMethod = {
 
     ibus
     ibus-with-plugins
-    ibus-chewing    
 
   ];
 
