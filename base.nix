@@ -56,7 +56,7 @@
 i18n.inputMethod = {
   enable = true;
   type = "ibus";
-  ibus.engines = with pkgs.ibus-engines; [ pinyin table-chinese];
+  ibus.engines = with pkgs.ibus-engines; [ libpinyin table-chinese];
  };
 
 # doesn't work
@@ -154,6 +154,7 @@ i18n.inputMethod = {
 
     ibus
     ibus-with-plugins
+    libchewing
 
   ];
 
