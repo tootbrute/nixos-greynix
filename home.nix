@@ -26,13 +26,6 @@
     
     # font stuff for alacritty
     pkgs.iosevka #font program
-    (pkgs.nerdfonts.override {
-      fonts = [
-        "IBMPlexMono"
-        "Iosevka"
-        "IosevkaTerm"
-      ];
-    })
 
     xreader #pdf viewer
 
