@@ -14,8 +14,10 @@
     fira-code-symbols  
     mplus-outline-fonts.githubRelease  
     dina-font  
-    proggyfonts  
+    proggyfonts
+#    pkgs.nerd-fonts._0xproto # can't get nerd fonts working again
+#    pkgs.nerd-fonts.droid_sans_mono
   ];
-  
+
   fonts.fontDir.enable = true;
 }

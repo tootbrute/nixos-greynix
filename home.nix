@@ -26,6 +26,7 @@
     
     # font stuff for alacritty
     pkgs.iosevka #font program
+#    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
 
     xreader #pdf viewer
 
