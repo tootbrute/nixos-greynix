@@ -25,6 +25,9 @@
     options = "--delete-older-than 7d";
   };
 
+  # increase buffer size
+  nix.settings.download-buffer-size = "2G";
+
   # Enable networking
   networking.networkmanager.enable = true;
 
@@ -51,9 +54,10 @@
   };
 #from someone on fedi
   i18n.inputMethod = {
-    enabled = "fcitx5";
+    type = "fcitx5";
     fcitx5.waylandFrontend = true;
     fcitx5.addons = with pkgs; [
+      fcitx5-im #doesn't seem to help
       fcitx5-gtk             # alternatively, kdePackages.fcitx5-qt
       fcitx5-chewing
       fcitx5-chinese-addons  # table input method support
