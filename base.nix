@@ -56,7 +56,7 @@
 i18n.inputMethod = {
   enable = true;
   type = "ibus";
-  ibus.engines = with pkgs.ibus-engines; [ pinyin libpinyin libchewing anthy ];
+  ibus.engines = with pkgs.ibus-engines; [ pinyin table-chinese];
  };
 
 # doesn't work
@@ -151,6 +151,11 @@ i18n.inputMethod = {
     kdePackages.kdenlive
     mediainfo #something for kdenlive
     audacity
+
+    ibus
+    ibus-with-plugins
+    ibus-chewing    
+
   ];
 
  # Accelerated Video Playback
