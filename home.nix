@@ -36,6 +36,8 @@
     nerd-fonts.jetbrains-mono
     nerd-fonts.iosevka-term-slab
     nerd-fonts.go-mono
+    nerd-fonts.droid-sans-mono
+    nerd-fonts.fantasque-sans-mono
 
     xreader #pdf viewer
 
