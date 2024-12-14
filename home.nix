@@ -26,7 +26,14 @@
     
     # font stuff for alacritty
     pkgs.iosevka #font program
-#    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+
+# not working
+#    (pkgs.nerdfonts.override {
+#      fonts = [
+#        "IBMPlexMono"
+#        "Iosevka"
+#        "IosevkaTerm"
+#      ];
 
     xreader #pdf viewer
 

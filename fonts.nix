@@ -15,8 +15,7 @@
     mplus-outline-fonts.githubRelease  
     dina-font  
     proggyfonts
-#    pkgs.nerd-fonts._0xproto # can't get nerd fonts working again
-#    pkgs.nerd-fonts.droid_sans_mono
+    iosevka
   ];
 
   fonts.fontDir.enable = true;
