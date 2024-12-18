@@ -140,19 +140,19 @@
       env.TERM = "xterm-256color";
     font = {
       normal = {
-        family = "IosevkaTerm Nerd Font";
+        family = "Iosevka Nerd Font";
         style = "Regular";
       };
       bold = {
-        family = "IosevkaTerm Nerd Font";
+        family = "Iosevka Nerd Font";
         style = "Bold";
       };
       italic = {
-        family = "IosevkaTerm Nerd Font";
+        family = "Iosevka Nerd Font";
         style = "Italic";
       };
       bold_italic = {
-        family = "IosevkaTerm Nerd Font";
+        family = "Iosevka Nerd Font";
         style = "Bold Italic";
       };
       size = 20;
