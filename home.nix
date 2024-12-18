@@ -30,6 +30,7 @@
     nerd-fonts.iosevka
     nerd-fonts.iosevka-term
     nerd-fonts.fira-code
+    nerd-fonts.fira-mono
     nerd-fonts.roboto-mono
     nerd-fonts.noto
     nerd-fonts.martian-mono
@@ -38,6 +39,8 @@
     nerd-fonts.go-mono
     nerd-fonts.droid-sans-mono
     nerd-fonts.fantasque-sans-mono
+    nerd-fonts.ubuntu-mono
+    nerd-fonts.hack
 
     xreader #pdf viewer
 
@@ -138,29 +141,26 @@
     # custom settings
     settings = {
       env.TERM = "xterm-256color";
+
     font = {
       normal = {
-        family = "Iosevka Nerd Font";
-        style = "Regular";
+	family = "JetBrains Mono Nerd Font";
+	style = "Regular";
       };
       bold = {
-        family = "Iosevka Nerd Font";
-        style = "Bold";
+	family = "JetBrains Mono Nerd Font";
+	style = "Bold";
       };
       italic = {
-        family = "Iosevka Nerd Font";
-        style = "Italic";
+	family = "JetBrains Mono Nerd Font";
+	style = "Italic";
       };
-      bold_italic = {
-        family = "Iosevka Nerd Font";
-        style = "Bold Italic";
-      };
-      size = 20;
   };
 
-#      font = {
-#        size = 18;
-#      };
+      font = {
+        size = 20;
+      };
+
       window.dimensions = {
         lines = 40;
         columns = 200;
