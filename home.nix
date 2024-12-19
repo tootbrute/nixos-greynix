@@ -107,6 +107,9 @@
     ethtool
     pciutils # lspci
     usbutils # lsusb
+
+    #test
+    libchewing
   ];
 
   # Environment

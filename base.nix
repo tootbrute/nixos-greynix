@@ -151,6 +151,7 @@ i18n.inputMethod = {
     kdePackages.kdenlive
     mediainfo #something for kdenlive
     audacity
+    element-desktop
 
     ibus
     ibus-with-plugins
