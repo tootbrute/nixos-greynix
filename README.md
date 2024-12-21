@@ -3,6 +3,7 @@ My NixOS repo with that has the configs for 2 of my NixOS machines.
 
 **Note to self:**
 I have no files in /etc/nixos now. I wonder if I should `ln` them there. Hmm.
+Thoughts?
 
 ## How to use this:
 1. Change hostnames in the flake
