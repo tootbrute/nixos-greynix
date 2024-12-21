@@ -46,6 +46,26 @@
           } #close homemanager
         ]; #close modules
       }; # close bluenix
+
+        # aspirenix - Grey Acer Aspire machine
+        aspirenix = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./base.nix
+          ./aspire/configuration.nix
+
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.elias = import ./home.nix;
+
+            # Optionally, use home-manager.extraSpecialArgs to pass
+            # arguments to home.nix
+          } #close homemanager
+        ]; #close modules
+      }; # close bluenix
+
     }; #close nixosconfigurations
   }; #close outputs
 }

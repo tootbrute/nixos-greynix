@@ -59,24 +59,6 @@ i18n.inputMethod = {
   ibus.engines = with pkgs.ibus-engines; [ libpinyin table-chinese];
  };
 
-# doesn't work
-#  i18n.inputMethod = {
-#    type = "fcitx5";
-#    fcitx5.waylandFrontend = true;
-#    fcitx5.addons = with pkgs; [
- #     fcitx5-im #doesn't seem to help
- #     fcitx5-gtk             # alternatively, kdePackages.fcitx5-qt
- #     fcitx5-chewing
- #     fcitx5-chinese-addons  # table input method support
- #     fcitx5-nord            # a color theme
- #   ];
- # };
-#old one didn't work
-# i18n.inputMethod = {
-#    type = "fcitx5";
-#    fcitx5.addons = with pkgs; [ fcitx5-chewing fcitx5-chinese-addons ];
-#  };
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
