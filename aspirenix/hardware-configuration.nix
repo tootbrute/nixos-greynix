@@ -13,6 +13,8 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
+  zramSwap.enable = true;
+
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/f4554a8a-b8d9-4c9e-bea9-c39452383e62";
       fsType = "ext4";
@@ -27,14 +29,8 @@
     };
 
   swapDevices =
-    [  { device = "/dev/disk/by-uuid/81d80835-b4d9-4808-b662-da03b38419e8"; }
-       { device = "/dev/disk/by-uuid/fcd6ecf9-3d4d-4cb1-b217-957bae8fbc3f"; }
+    [ { device = "/dev/disk/by-uuid/fcd6ecf9-3d4d-4cb1-b217-957bae8fbc3f"; }
     ];
-
-# original, one swap on HDD
-#  swapDevices =
-#    [ { device = "/dev/disk/by-uuid/fcd6ecf9-3d4d-4cb1-b217-957bae8fbc3f"; }
-#    ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
