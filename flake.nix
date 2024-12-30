@@ -14,7 +14,7 @@
         system = "x86_64-linux";
         modules = [
           ./base.nix
-          .hosts/greynix/configuration.nix
+          ./greynix/configuration.nix
           
           home-manager.nixosModules.home-manager
           {
@@ -33,7 +33,7 @@
         system = "x86_64-linux";
         modules = [
           ./base.nix
-          ./hosts/bluenix/configuration.nix
+          ./bluenix/configuration.nix
           
           home-manager.nixosModules.home-manager
           {
@@ -52,7 +52,7 @@
         system = "x86_64-linux";
         modules = [
           ./base.nix
-          ./hosts/aspirenix/configuration.nix
+          ./aspirenix/configuration.nix
 
           home-manager.nixosModules.home-manager
           {
