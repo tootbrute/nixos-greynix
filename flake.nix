@@ -33,7 +33,7 @@
         system = "x86_64-linux";
         modules = [
           ./base.nix
-          ./bluenix/configuration.nix
+          ./hosts/bluenix/configuration.nix
           
           home-manager.nixosModules.home-manager
           {
