@@ -112,15 +112,6 @@
     libchewing
   ];
   
-  programs.git = {
-    enable = true;
-    userName = "tootbrute";
-    userEmail = "tootbrute@tutanota.com";
-    extraConfig = {
-      init.defaultBranch = "main";
-    };
-  };
-
   # Environment
   home.sessionVariables = {
     EDITOR = "nano";
@@ -133,6 +124,9 @@
     enable = true;
     userName = "Tootbrute";
     userEmail = "tootbrute@tutamail.com";
+    extraConfig = {
+    init.defaultBranch = "main";
+    };
   };
 
   # starship - an customizable prompt for any shell
