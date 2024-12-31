@@ -111,6 +111,12 @@
     #test
     libchewing
   ];
+  
+  programs.git = {
+    enable = true;
+    userName = "tootbrute";
+    userEmail = "tootbrute@tutanota.com";
+  }
 
   # Environment
   home.sessionVariables = {
