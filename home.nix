@@ -116,7 +116,10 @@
     enable = true;
     userName = "tootbrute";
     userEmail = "tootbrute@tutanota.com";
-  }
+    extraConfig = {
+      init.defaultBranch = "main";
+    };
+  };
 
   # Environment
   home.sessionVariables = {
