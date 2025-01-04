@@ -3,9 +3,9 @@
 {
   imports =
     [ # I do imports in flakes
-      ./nixosModules/gnome.nix
-      ./nixosModules/systemd.nix
-      ./nixosModules/fonts.nix
+      ./gnome.nix
+      ./systemd.nix
+      ./fonts.nix
     ];
 
   # Bootloader.
