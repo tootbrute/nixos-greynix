@@ -79,7 +79,7 @@ i18n.inputMethod = {
   services.printing.enable = false;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
