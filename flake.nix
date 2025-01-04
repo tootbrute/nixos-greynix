@@ -52,7 +52,7 @@
         system = "x86_64-linux";
         modules = [
           ./base.nix
-          ./aspirenix/configuration.nix
+          ./hosts/aspirenix/configuration.nix
 
           home-manager.nixosModules.home-manager
           {
