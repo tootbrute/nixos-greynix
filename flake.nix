@@ -15,6 +15,7 @@
         modules = [
           ./nixosModules/base.nix
           ./hosts/greynix/configuration.nix
+          ./nixosModules/docker.nix
           
           home-manager.nixosModules.home-manager
           {

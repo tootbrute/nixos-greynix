@@ -9,4 +9,5 @@
       autoPrune = {
         enable = true;
       };
+    };
 }
