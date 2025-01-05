@@ -13,7 +13,7 @@
         greynix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./base.nix
+          ./nixosModules/base.nix
           ./hosts/greynix/configuration.nix
           
           home-manager.nixosModules.home-manager
@@ -32,8 +32,9 @@
         bluenix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./base.nix
+          ./nixosModules/base.nix
           ./hosts/bluenix/configuration.nix
+          ./nixosModules/docker.nix
           
           home-manager.nixosModules.home-manager
           {
@@ -52,7 +53,7 @@
         aspirenix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./base.nix
+          ./nixosModules/base.nix
           ./hosts/aspirenix/configuration.nix
 
           home-manager.nixosModules.home-manager

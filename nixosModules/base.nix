@@ -1,17 +1,18 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, config, lib ... }:
 
 {
   imports =
-    [ # I do imports in flakes
+    [ 
       ./gnome.nix
       ./systemd.nix
       ./fonts.nix
-      #module test
-      ./nixosModules/docker.nix
+      ./systemd.nix
+      ./fonts.nix
     ];
 
+  # DELETE LATER
   # Enable/Disable Modules
-  dockerModule.enable = true;
+  #dockerModule.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
