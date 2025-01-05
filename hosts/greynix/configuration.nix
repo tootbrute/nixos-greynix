@@ -10,8 +10,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ../../nixosModules/base.nix
-      ../../nixosModules/modules.nix
     ];
 
   # Enable/Disable Modules
