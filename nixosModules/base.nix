@@ -1,7 +1,7 @@
 # base.nix
 # configuration for all my computers
 
-{ pkgs, config, lib ... }:
+{ pkgs, config, lib, ... }:
 
 {
   imports =
