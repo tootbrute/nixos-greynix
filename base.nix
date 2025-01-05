@@ -131,7 +131,6 @@ i18n.inputMethod = {
     btop
     restic
     kdePackages.kdenlive
-    mediainfo #something for kdenlive
     audacity
     element-desktop
 
@@ -169,6 +168,7 @@ i18n.inputMethod = {
   services.tailscale.enable = true;
 
   # Enable Docker
-  virtualisation.docker.enable = true;
+  #virtualisation.docker.enable = true;
+  # trying to put into a module
 
 }
