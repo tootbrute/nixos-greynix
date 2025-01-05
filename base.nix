@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   imports =
@@ -6,7 +6,12 @@
       ./gnome.nix
       ./systemd.nix
       ./fonts.nix
+      #module test
+      ./nixosModules/docker.nix
     ];
+
+  # Enable/Disable Modules
+  dockerModule.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
