@@ -13,7 +13,7 @@
         greynix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./nixosModules/base.nix
+          ./base.nix
           ./hosts/greynix/configuration.nix
           
           home-manager.nixosModules.home-manager
@@ -32,7 +32,7 @@
         bluenix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./nixosModules/base.nix
+          ./base.nix
           ./hosts/bluenix/configuration.nix
           
           home-manager.nixosModules.home-manager
@@ -48,10 +48,11 @@
       }; # close bluenix
 
         # aspirenix - Grey Acer Aspire machine
+        # low spec machine - need to figure out how to change this config a bit
         aspirenix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./nixosModules/base.nix
+          ./base.nix
           ./hosts/aspirenix/configuration.nix
 
           home-manager.nixosModules.home-manager
