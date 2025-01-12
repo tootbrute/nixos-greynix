@@ -9,8 +9,6 @@
       ./gnome.nix
       ./systemd.nix
       ./fonts.nix
-      ./systemd.nix
-      ./fonts.nix
     ];
 
   # Bootloader.
@@ -121,7 +119,7 @@
   #  vim # Do not forget to add an editor to edit configuration.ni>
     wget
     curl
-    nvtopPackages.full
+#    nvtopPackages.full
     iotas
     fastfetch
     curl
