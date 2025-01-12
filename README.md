@@ -1,18 +1,8 @@
 # My NixOS Flake Config
 My NixOS repo with that has the configs for 2 of my NixOS machines.
 
-NOTE: Archived. I don't use this anymore. It got too complicated with multiple machines.
-
-
-## How to use this:
-1. Change hostnames in the flake
-2. Update things back up to github with:
-```
-git add . #add all files
-git commit -m "Update NixOS config." #commit message
-git push origin main #put updated files in git repo
-```
-3. In the `./nixos-config` directory, deploy with the command `sudo nixos-rebuild switch --flake .#HOSTNAME`
+## NOTE: Archived.
+I don't use this anymore. It got too complicated with multiple machines.
 
 # Structure of NixOS Config
 
