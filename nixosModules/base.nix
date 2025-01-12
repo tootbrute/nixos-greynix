@@ -13,10 +13,6 @@
       ./fonts.nix
     ];
 
-  # DELETE LATER
-  # Enable/Disable Modules
-  #dockerModule.enable = true;
-
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -148,10 +144,11 @@
 
   ];
 
+ # NOT WORKING FIX LATER
  # Accelerated Video Playback
-  nixpkgs.config.packageOverrides = pkgs: {
-    intel-vaapi-driver = pkgs.intel-vaapi-driver.override { enableHybridCodec = true; };
-  };
+ # nixpkgs.config.packageOverrides = pkgs: {
+ #   intel-vaapi-driver = pkgs.intel-vaapi-driver.override { enableHybridCodec = true; };
+ # };
 
 # NOT WORKING, FIX LATER
 #  hardware.graphics = {
@@ -162,7 +159,7 @@
 #      libvdpau-va-gl
 #    ];
 #  };
-  environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; }; # Force intel-media-driver
+#  environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; }; # Force intel-media-driver
 
   # Services
   # =========================
