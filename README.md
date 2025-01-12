@@ -1,9 +1,8 @@
 # My NixOS Flake Config
 My NixOS repo with that has the configs for 2 of my NixOS machines.
 
-**Note to self:**
-I have no files in /etc/nixos now. I wonder if I should `ln` them there. Hmm.
-Thoughts?
+NOTE: Archived. I don't use this anymore. It got too complicated with multiple machines.
+
 
 ## How to use this:
 1. Change hostnames in the flake
@@ -15,24 +14,35 @@ git push origin main #put updated files in git repo
 ```
 3. In the `./nixos-config` directory, deploy with the command `sudo nixos-rebuild switch --flake .#HOSTNAME`
 
-## Deploy to new system:
-*not tested yet*
-1. git clone ?
-2. nixos-rebuild switch --flake .#HOSTNAME
-
 # Structure of NixOS Config
-```
-└── nixos-config
-   ├── base.nix
-   ├── bluenix
-   │   ├── configuration.nix
-   │   └── hardware-configuration.nix
-   ├── flake.nix
-   ├── fonts.nix
-   ├── gnome.nix
-   ├── greynix
-   │   ├── configuration.nix
-   │   └── hardware-configuration.nix
-   ├── home.nix
-   └── systemd.nix
+
+```.
+├── flake.lock
+├── flake.nix
+├── flatpak-install.sh
+├── home.nix
+├── hosts
+│   ├── aspirenix
+│   │   ├── configuration.nix
+│   │   └── hardware-configuration.nix
+│   ├── bluenix
+│   │   ├── configuration.nix
+│   │   └── hardware-configuration.nix
+│   └── greynix
+│       ├── configuration.nix
+│       └── hardware-configuration.nix
+├── nixosModules
+│   ├── base.nix
+│   ├── docker.nix
+│   ├── fonts.nix
+│   ├── gnome.nix
+│   ├── module-docker.nix
+│   ├── module-modules.nix
+│   └── systemd.nix
+├── nix-upgrade.sh
+├── pull.sh
+├── README.md
+├── rebuild.sh
+├── temp-non-declarative-stuff.txt
+└── update.sh
 ```
