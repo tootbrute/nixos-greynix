@@ -16,6 +16,8 @@
     dina-font  
     proggyfonts
     iosevka
+    nerdfonts
+
   ];
 
   fonts.fontDir.enable = true;

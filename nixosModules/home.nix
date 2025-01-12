@@ -24,24 +24,6 @@
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
     
-    # font stuff for alacritty
-    pkgs.iosevka #font program
-    # nerd fonts - https://search.nixos.org/packages?channel=unstable&size=50&sort=relevance&type=packages&query=nerd-fonts
-    nerd-fonts.iosevka
-    nerd-fonts.iosevka-term
-    nerd-fonts.fira-code
-    nerd-fonts.fira-mono
-    nerd-fonts.roboto-mono
-    nerd-fonts.noto
-    nerd-fonts.martian-mono
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.iosevka-term-slab
-    nerd-fonts.go-mono
-    nerd-fonts.droid-sans-mono
-    nerd-fonts.fantasque-sans-mono
-    nerd-fonts.ubuntu-mono
-    nerd-fonts.hack
-
     xreader #pdf viewer
 
     fastfetch

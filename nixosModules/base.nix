@@ -62,11 +62,11 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-i18n.inputMethod = {
-  enable = true;
-  type = "ibus";
-  ibus.engines = with pkgs.ibus-engines; [ libpinyin table-chinese];
- };
+  i18n.inputMethod = {
+    enable = true;
+    type = "ibus";
+    ibus.engines = with pkgs.ibus-engines; [ libpinyin table-chinese];
+   };
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -88,7 +88,6 @@ i18n.inputMethod = {
   services.printing.enable = false;
 
   # Enable sound with pipewire.
-  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
