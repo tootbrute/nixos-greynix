@@ -2,7 +2,8 @@
   description = "NixOS configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    #nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -14,7 +15,7 @@
         system = "x86_64-linux";
         modules = [
           ./nixosModules/base.nix
-          ./hosts/greynix/configuration.nix
+          ./greynix/configuration.nix
           ./nixosModules/docker.nix
           
           home-manager.nixosModules.home-manager
