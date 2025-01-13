@@ -117,13 +117,14 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.ni>
-    # basic terminal apps
+    # terminal apps
     wget
     curl
     fastfetch
     git
     btop
     htop
+    ptyxis
 
     # core apps
     iotas
@@ -150,7 +151,7 @@
 
   ];
 
- # NOT WORKING FIX LATER
+ # not working
  # Accelerated Video Playback
  # nixpkgs.config.packageOverrides = pkgs: {
  #   intel-vaapi-driver = pkgs.intel-vaapi-driver.override { enableHybridCodec = true; };
