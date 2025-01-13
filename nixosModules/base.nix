@@ -117,20 +117,24 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.ni>
+    # basic terminal apps
     wget
     curl
-#    nvtopPackages.full
-    iotas
     fastfetch
+    git
+    btop
+    htop
+
+    # core apps
+    iotas
     curl
     keepassxc
-    git
     nextcloud-client
     libreoffice-fresh
     hunspell #dictionaries for libreoffice
     hunspellDicts.en_CA
     hunspellDicts.en_US
-    btop
+
     restic
     kdePackages.kdenlive
     audacity
@@ -139,6 +143,10 @@
     ibus
     ibus-with-plugins
     libchewing
+
+    #gaming
+    dosbox
+
 
   ];
 
