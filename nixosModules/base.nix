@@ -9,6 +9,7 @@
       ./gnome.nix
       ./systemd.nix
       ./fonts.nix
+      ./intel-gpu.nix
     ];
 
   # Bootloader.
@@ -150,12 +151,6 @@
 
 
   ];
-
- # not working
- # Accelerated Video Playback
- # nixpkgs.config.packageOverrides = pkgs: {
- #   intel-vaapi-driver = pkgs.intel-vaapi-driver.override { enableHybridCodec = true; };
- # };
 
 # NOT WORKING, FIX LATER
 #  hardware.graphics = {
