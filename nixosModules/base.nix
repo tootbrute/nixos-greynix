@@ -140,6 +140,8 @@
     restic
     kdePackages.kdenlive
     audacity
+    gimp
+    krita
     element-desktop
 
     ibus
@@ -149,7 +151,9 @@
     #gaming
     dosbox
 
-
+    #gpu tools
+    intel_gpu_tools
+    nvtop
   ];
 
 # NOT WORKING, FIX LATER
