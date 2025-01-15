@@ -1,9 +1,8 @@
 # add things to git
 COMMIT_MSG="Update NixOS config."
-echo "commit message?"
+echo "Commit message?"
 read COMMIT_MSG
-
-echo "this is what they wrote: $COMMIT_MSG"
+echo "OK!"
 
 git add .
 git commit -m "$COMMIT_MSG"
