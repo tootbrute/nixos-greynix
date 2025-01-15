@@ -152,20 +152,9 @@
     dosbox
 
     #gpu tools
-    intel_gpu_tools
-    nvtop
+    intel-gpu-tools
+    #nvtopPackages.full not working right now
   ];
-
-# NOT WORKING, FIX LATER
-#  hardware.graphics = {
-#    enable = true;
-#    extraPackages = with pkgs; [
-#      intel-media-driver # LIBVA_DRIVER_NAME=iHD
-#      intel-vaapi-driver # LIBVA_DRIVER_NAME=i965 (older but works better for Firefox/Chromium)
-#      libvdpau-va-gl
-#    ];
-#  };
-#  environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; }; # Force intel-media-driver
 
   # Services
   # =========================
