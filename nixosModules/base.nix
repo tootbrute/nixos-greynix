@@ -58,7 +58,8 @@
   };
 
   i18n.inputMethod = {
-    enable = "fcitx5";
+    enable = true;
+    type = "fcitx5";
     fcitx5.addons = with pkgs; [
       fcitx5-chewing
       fcitx5-chinese-addons

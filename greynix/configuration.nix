@@ -27,10 +27,10 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.elias = {
     isNormalUser = true;
-    description = "Elias Gasparis";
+    description = "elias";
     extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     packages = with pkgs; [
-    #  thunderbird
+    #  install packages in home-manager
     ];
   };
 
