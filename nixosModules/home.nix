@@ -93,7 +93,6 @@
     #chinese input
     fcitx5-gtk
     fcitx5-pinyin-moegirl #dictionary
-    cedict #dictionary
     libchewing #needed?
   ];
   
