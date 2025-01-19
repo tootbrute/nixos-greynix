@@ -58,10 +58,28 @@
   };
 
   i18n.inputMethod = {
-    enable = true;
-    type = "ibus";
-    ibus.engines = with pkgs.ibus-engines; [ libpinyin table-chinese];
-   };
+    enabled = true;
+    type = "fcitx5";
+    addons = with pkgs; [
+      fcitx5-chewing
+      fcitx5-chinese-addons
+    ];
+  };
+    
+
+#  il8n.inputMethod.enabled = "fcitx5";
+#  il8n.inputMethod.fcitx5.addons = with pkgs; [
+#    fcitx5-chewing
+#    fcitx5-chinese-addons
+  #what is for pinyin?
+#  ];
+
+# trying FCITX5 first
+#  i18n.inputMethod = {
+#    enable = true;
+#    type = "ibus";
+#    ibus.engines = with pkgs.ibus-engines; [ libpinyin table-chinese];
+#   };
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
