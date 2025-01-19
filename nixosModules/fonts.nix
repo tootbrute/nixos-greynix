@@ -6,7 +6,8 @@
     corefonts  
     vistafonts  
     noto-fonts  
-    noto-fonts-cjk-sans  
+    noto-fonts-cjk-sans
+    noto-fonts-cjk-extra  
     noto-fonts-cjk-serif  
     noto-fonts-emoji  
     liberation_ttf  
