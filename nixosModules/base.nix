@@ -60,7 +60,7 @@
   i18n.inputMethod = {
     enabled = true;
     type = "fcitx5";
-    addons = with pkgs; [
+    fcitx5.addons = with pkgs; [
       fcitx5-chewing
       fcitx5-chinese-addons
     ];
