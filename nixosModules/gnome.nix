@@ -42,6 +42,7 @@
     gnomeExtensions.gsconnect
     gnomeExtensions.hot-edge
     gnomeExtensions.alphabetical-app-grid
+    gnomeExtensions.kimpanel
   ];
 
 }
