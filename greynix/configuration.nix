@@ -28,9 +28,9 @@
   users.users.elias = {
     isNormalUser = true;
     description = "elias";
-    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "disk"];
     packages = with pkgs; [
-    #  install packages in home-manager
+    #  install packages in base.nix or home-manager
     ];
   };
 
