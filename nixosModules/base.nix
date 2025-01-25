@@ -148,7 +148,7 @@
     kdePackages.kdenlive
     audacity
     gimp
-    krita
+    pkgs.krita
     element-desktop
 
     #gaming
