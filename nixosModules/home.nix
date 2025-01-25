@@ -26,7 +26,6 @@
     
     xreader #pdf viewer
 
-    fastfetch
     nnn # terminal file manager
 
     # archives
@@ -73,10 +72,8 @@
     hugo # static site generator
     glow # markdown previewer in terminal
 
-    btop  # replacement of htop/nmon
     iotop # io monitoring
     iftop # network monitoring
-    htop # the classic
 
     # system call monitoring
     strace # system call monitoring
@@ -90,10 +87,6 @@
     pciutils # lspci
     usbutils # lsusb
 
-    #chinese input
-    fcitx5-gtk
-    fcitx5-pinyin-moegirl #dictionary
-    libchewing #needed?
   ];
   
   # Environment
