@@ -129,28 +129,27 @@
     git
     btop
     htop
-    ptyxis
+    ptyxis # terminal app
+    tree
+    restic # backup program
 
     # core apps
-    iotas
+    iotas # nextcloud compatible notes app
     curl
-    keepassxc
+    keepassxc # password client
     nextcloud-client
-    libreoffice-fresh
-    hunspell #dictionaries for libreoffice
+    libreoffice-fresh # word docs
+    hunspell # dictionaries for libreoffice
     hunspellDicts.en_CA
     hunspellDicts.en_US
+    xreader # pdf viewer
 
-    restic
+    # creative apps
     kdePackages.kdenlive
     audacity
     gimp
     krita
     element-desktop
-
-    ibus
-    ibus-with-plugins
-    libchewing
 
     #gaming
     dosbox
@@ -158,6 +157,46 @@
     #gpu tools
     intel-gpu-tools
     #nvtopPackages.full not working right now
+
+    # archive programs
+    zip
+    xz
+    unzip
+    p7zip
+
+    # utils
+    ripgrep # recursively searches directories for a regex >
+    #jq # A lightweight and flexible command-line JSON proc>
+    #yq-go # yaml processor https://github.com/mikefarah/yq
+    eza # A modern replacement for ‘ls’
+    #fzf # A command-line fuzzy finder
+    nnn # terminal file manager
+
+    # networking tools
+    mtr # A network diagnostic tool
+    iperf3
+    dnsutils  # `dig` + `nslookup`
+    #ldns # replacement of `dig`, it provide the command `drill`
+    #aria2 # A lightweight multi-protocol & multi-source command-line download utility
+    #socat # replacement of openbsd-netcat
+    nmap # A utility for network discovery and security auditing
+    #ipcalc  # it is a calculator for the IPv4/v6 addresses
+
+    # system tools
+    sysstat
+    lm_sensors # for `sensors` command
+    ethtool
+    pciutils # lspci
+    usbutils # lsusb
+
+   # system call monitoring
+    strace # system call monitoring
+    ltrace # library call monitoring
+    lsof # list open files
+
+    iotop # io monitoring
+    iftop # network monitoring
+
   ];
 
   # Services
