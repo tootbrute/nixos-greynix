@@ -23,7 +23,11 @@
   home.packages = with pkgs; [
 
   ];
-  
+
+  # Krita config
+  # interface setup the way I like
+  home.file.".config/kritarc".source = ./kritarc;
+
   # Environment
   home.sessionVariables = {
     EDITOR = "nano";
