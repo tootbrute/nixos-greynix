@@ -216,6 +216,10 @@
   # Enable Docker
   #virtualisation.docker.enable = true;
 
+  # Enable Firmware Updater
   services.fwupd.enable = true;
+  # fwupdmgr refresh
+  # fwupdmgr get-updates
+
 
 }
