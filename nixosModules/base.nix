@@ -29,6 +29,8 @@
     options = "--delete-older-than 7d";
   };
 
+  nix.settings.auto-optimise-store = true;
+
   # increase buffer size
   nix.settings.download-buffer-size = "2G";
 
@@ -213,5 +215,7 @@
 
   # Enable Docker
   #virtualisation.docker.enable = true;
+
+  services.fwupd.enable = true;
 
 }
