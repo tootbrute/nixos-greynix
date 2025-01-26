@@ -123,7 +123,6 @@
   # $ nix search wget
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.ni>
     # terminal apps
     wget
     curl
@@ -131,9 +130,15 @@
     git
     btop
     htop
-    ptyxis # terminal app
     tree
     restic # backup program
+
+    # terminal editors
+    neovim
+    ptyxis
+
+    # nix helper apps
+    nh
 
     # core apps
     iotas # nextcloud compatible notes app
