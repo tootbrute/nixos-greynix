@@ -1,6 +1,0 @@
-on new systems i have to do this
-
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-seahorse thing for auto login
-i have encrypted hard drive
