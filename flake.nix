@@ -16,16 +16,16 @@
         greynix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./nixosModules/base.nix
+          ./mods/base.nix
           ./greynix/configuration.nix
-          ./nixosModules/docker.nix
+          ./mods/docker.nix
           nvf.nixosModules.default #for neovim framework flake
           
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.elias = import ./nixosModules/home.nix;
+            home-manager.users.elias = import ./mods/home.nix;
 
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
