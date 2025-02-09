@@ -93,6 +93,16 @@
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
     };
+    # Set Wallpaper
+    "org/gnome/desktop/background" = {
+        "picture-uri" = "/home/elias/.background-image";
+        "picture-uri-dark" = "/home/elias/.background-image";
+    };
+  };
+
+  # Create Wallpaper file for use with GNOME Dconf settings
+  home.file.".background-image" = {
+    source = ./files/wallpaper.png;
   };
 
   gtk = {
