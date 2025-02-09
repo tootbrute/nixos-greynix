@@ -45,4 +45,17 @@
     gnomeExtensions.kimpanel
   ];
 
+  # Set User 'elias' icon to tootbrute.png image 
+  system.activationScripts.script.text = ''
+      mkdir -p /var/lib/AccountsService/{icons,users}
+      cp /home/elias/nixos-config/files/tootbrute.png /var/lib/AccountsService/icons/elias
+      echo -e "[User]\nIcon=/var/lib/AccountsService/icons/elias\n" > /var/lib/AccountsService/users/elias
+
+      chown root:root /var/lib/AccountsService/users/elias
+      chmod 0600 /var/lib/AccountsService/users/elias
+
+      chown root:root /var/lib/AccountsService/icons/elias
+      chmod 0444 /var/lib/AccountsService/icons/elias
+    '';
+
 }
