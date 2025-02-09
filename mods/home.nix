@@ -102,7 +102,7 @@
 
   # Create Wallpaper file for use with GNOME Dconf settings
   home.file.".background-image" = {
-    source = ./files/wallpaper.png;
+    source = ../files/wallpaper.png;
   };
 
   gtk = {
