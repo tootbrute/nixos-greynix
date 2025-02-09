@@ -7,10 +7,9 @@
           url = "github:nix-community/home-manager";
           inputs.nixpkgs.follows = "nixpkgs";
       };
-      nvf.url = "github:notashelf/nvf";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, nvf, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
         # greynix - Gray Asus machine
         greynix = nixpkgs.lib.nixosSystem {
@@ -19,7 +18,6 @@
           ./mods/base.nix
           ./greynix/configuration.nix
           ./mods/docker.nix
-          nvf.nixosModules.default #for neovim framework flake
           
           home-manager.nixosModules.home-manager
           {

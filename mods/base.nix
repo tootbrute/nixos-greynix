@@ -10,7 +10,6 @@
       ./systemd.nix
       ./fonts.nix
       ./intel-gpu.nix
-      ./neovim-config.nix
     ];
 
   # Bootloader.
