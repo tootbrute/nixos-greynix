@@ -132,9 +132,15 @@
     htop
     tree
     restic # backup program
+    wiper # A TUI disk analyser and cleanup tool
+    curl
+    # emulation
+    quickemu
+
 
     # terminal editors
     neovim
+    xclip # for nvim clipboard
     ptyxis
 
     # nix helper apps
@@ -142,9 +148,9 @@
 
     # core apps
     iotas # nextcloud compatible notes app
-    curl
     keepassxc # password client
     nextcloud-client
+    calibre # ebook program
     libreoffice-fresh # word docs
     hunspell # dictionaries for libreoffice
     hunspellDicts.en_CA
